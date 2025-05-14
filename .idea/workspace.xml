@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ae4ebf2-4926-409a-9438-fb88b79f5704" name="변경" comment="첫 커밋" />
+    <list default="true" id="1ae4ebf2-4926-409a-9438-fb88b79f5704" name="변경" comment="workspace.xml 수정" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,6 +38,7 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
     "com.codeium.enabled": "true",
     "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
@@ -42,6 +46,8 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "ruby.structure.view.model.defaults.configured": "true",
+    "settings.editor.selected.configurable": "terminal",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -60,7 +66,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1747229331154</updated>
-      <workItem from="1747229334535" duration="324000" />
+      <workItem from="1747229334535" duration="536000" />
     </task>
     <task id="LOCAL-00001" summary="첫 커밋">
       <option name="closed" value="true" />
@@ -70,7 +76,39 @@
       <option name="project" value="LOCAL" />
       <updated>1747229379896</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary=".idea 추가">
+      <option name="closed" value="true" />
+      <created>1747229718920</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1747229718920</updated>
+    </task>
+    <task id="LOCAL-00003" summary=".idea 추가">
+      <option name="closed" value="true" />
+      <created>1747229727473</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1747229727473</updated>
+    </task>
+    <task id="LOCAL-00004" summary="logger 문제 수정">
+      <option name="closed" value="true" />
+      <created>1747229738738</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1747229738738</updated>
+    </task>
+    <task id="LOCAL-00005" summary="workspace.xml 수정">
+      <option name="closed" value="true" />
+      <created>1747229824450</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1747229824450</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -89,6 +127,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="첫 커밋" />
-    <option name="LAST_COMMIT_MESSAGE" value="첫 커밋" />
+    <MESSAGE value=".idea 추가" />
+    <MESSAGE value="logger 문제 수정" />
+    <MESSAGE value="workspace.xml 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="workspace.xml 수정" />
   </component>
 </project>
