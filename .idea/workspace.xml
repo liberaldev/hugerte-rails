@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ae4ebf2-4926-409a-9438-fb88b79f5704" name="변경" comment="레일즈 8로 변경" />
+    <list default="true" id="1ae4ebf2-4926-409a-9438-fb88b79f5704" name="변경" comment="config 파일 변경" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,6 +41,7 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
     "com.codeium.enabled": "true",
     "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/user/RubymineProjects/hugerte-rails/gemfiles",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -51,6 +52,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\RubymineProjects\hugerte-rails\gemfiles" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -66,7 +72,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1747229331154</updated>
-      <workItem from="1747229334535" duration="1291000" />
+      <workItem from="1747229334535" duration="1596000" />
     </task>
     <task id="LOCAL-00001" summary="첫 커밋">
       <option name="closed" value="true" />
@@ -124,7 +130,31 @@
       <option name="project" value="LOCAL" />
       <updated>1747230631627</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="edit workspace.xml">
+      <option name="closed" value="true" />
+      <created>1747230687990</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1747230687990</updated>
+    </task>
+    <task id="LOCAL-00009" summary="레일즈 8.0 관련 파일 추가">
+      <option name="closed" value="true" />
+      <created>1747230826065</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1747230826065</updated>
+    </task>
+    <task id="LOCAL-00010" summary="config 파일 변경">
+      <option name="closed" value="true" />
+      <created>1747230943441</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1747230943441</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,6 +177,9 @@
     <MESSAGE value="logger 문제 수정" />
     <MESSAGE value="workspace.xml 수정" />
     <MESSAGE value="레일즈 8로 변경" />
-    <option name="LAST_COMMIT_MESSAGE" value="레일즈 8로 변경" />
+    <MESSAGE value="edit workspace.xml" />
+    <MESSAGE value="레일즈 8.0 관련 파일 추가" />
+    <MESSAGE value="config 파일 변경" />
+    <option name="LAST_COMMIT_MESSAGE" value="config 파일 변경" />
   </component>
 </project>
