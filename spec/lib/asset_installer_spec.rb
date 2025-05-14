@@ -1,9 +1,9 @@
-require "tinymce/rails/asset_installer"
+require "hugerte/rails/asset_installer"
 
 module TinyMCE
   module Rails
     describe AssetInstaller do
-      let(:assets) { Pathname.new(File.expand_path(File.dirname(__FILE__) + "/../../vendor/assets/javascripts/tinymce")) }
+      let(:assets) { Pathname.new(File.expand_path(File.dirname(__FILE__) + "/../../vendor/assets/javascripts/hugerte")) }
       let(:target) { "/assets" }
       let(:manifest_path) { nil }
       let(:manifest) { double.as_null_object }
@@ -31,15 +31,15 @@ module TinyMCE
         end
 
         it "symlinks non-digested asset paths" do
-          digested_asset = "tinymce/langs/es-abcde1234567890.js"
-          asset = "tinymce/langs/es.js"
+          digested_asset = "hugerte/langs/es-abcde1234567890.js"
+          asset = "hugerte/langs/es.js"
 
           allow(manifest).to receive(:each).and_yield(asset)
           expect(manifest).to receive(:asset_path).with(asset).and_yield(digested_asset, asset)
 
           allow(File).to receive(:exist?).and_return(true)
 
-          expect(FileUtils).to receive(:ln_s).with("es-abcde1234567890.js", "/assets/tinymce/langs/es.js", :force => true)
+          expect(FileUtils).to receive(:ln_s).with("es-abcde1234567890.js", "/assets/hugerte/langs/es.js", :force => true)
 
           install
         end
@@ -53,20 +53,20 @@ module TinyMCE
         end
 
         it "removes digests from existing TinyMCE assets in the manifest" do
-          digested_asset = "tinymce/langs/es-abcde1234567890.js"
-          asset = "tinymce/langs/es.js"
+          digested_asset = "hugerte/langs/es-abcde1234567890.js"
+          asset = "hugerte/langs/es.js"
 
           allow(manifest).to receive(:each).and_yield(asset)
           expect(manifest).to receive(:remove_digest).with(asset).and_yield(digested_asset, asset)
           allow(File).to receive(:exist?).and_return(true)
-          expect(FileUtils).to receive(:mv).with("/assets/tinymce/langs/es-abcde1234567890.js", "/assets/tinymce/langs/es.js", :force => true)
+          expect(FileUtils).to receive(:mv).with("/assets/hugerte/langs/es-abcde1234567890.js", "/assets/hugerte/langs/es.js", :force => true)
 
           install
         end
 
         it "adds TinyMCE assets to the manifest" do
-          expect(manifest).to receive(:append).with("tinymce/tinymce.js", assets.parent.join("tinymce/tinymce.js"))
-          expect(manifest).to receive(:append).with("tinymce/themes/silver/theme.js", assets.parent.join("tinymce/themes/silver/theme.js"))
+          expect(manifest).to receive(:append).with("hugerte/hugerte.js", assets.parent.join("hugerte/hugerte.js"))
+          expect(manifest).to receive(:append).with("hugerte/themes/silver/theme.js", assets.parent.join("hugerte/themes/silver/theme.js"))
           install
         end
 

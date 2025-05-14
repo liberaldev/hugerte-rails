@@ -26,12 +26,12 @@ module TinyMCE::Rails
       context "using Sprockets", if: defined?(Sprockets) do
         it "returns a bundled TinyMCE javascript tag" do
           script = tinymce_assets
-          expect(script).to have_selector("script[src='#{asset_path("tinymce.js")}'][data-turbolinks-track='reload']", visible: false)
+          expect(script).to have_selector("script[src='#{asset_path("hugerte.js")}'][data-turbolinks-track='reload']", visible: false)
         end
 
         it "allows custom attributes to be set on the script tag" do
           script = tinymce_assets(defer: true, data: { turbo_track: "reload" })
-          expect(script).to have_selector("script[src='#{asset_path("tinymce.js")}'][defer][data-turbo-track='reload']", visible: false)
+          expect(script).to have_selector("script[src='#{asset_path("hugerte.js")}'][defer][data-turbo-track='reload']", visible: false)
         end
       end
 
@@ -39,20 +39,20 @@ module TinyMCE::Rails
         it "returns TinyMCE preinit code and separate javascript asset tags" do
           result = tinymce_assets
           expect(result).to include(tinymce_preinit)
-          expect(result).to have_selector("script[src='#{asset_path("tinymce/tinymce.js")}'][data-turbolinks-track='reload']", visible: false)
-          expect(result).to have_selector("script[src='#{asset_path("tinymce/rails.js")}'][data-turbolinks-track='reload']", visible: false)
+          expect(result).to have_selector("script[src='#{asset_path("hugerte/hugerte.js")}'][data-turbolinks-track='reload']", visible: false)
+          expect(result).to have_selector("script[src='#{asset_path("hugerte/rails.js")}'][data-turbolinks-track='reload']", visible: false)
         end
 
         it "allows custom attributes to be set on the script tags" do
           result = tinymce_assets(defer: true, data: { turbo_track: "reload" })
           expect(result).to include(tinymce_preinit)
-          expect(result).to have_selector("script[src='#{asset_path("tinymce/tinymce.js")}'][defer][data-turbo-track='reload']", visible: false)
-          expect(result).to have_selector("script[src='#{asset_path("tinymce/rails.js")}'][defer][data-turbo-track='reload']", visible: false)
+          expect(result).to have_selector("script[src='#{asset_path("hugerte/hugerte.js")}'][defer][data-turbo-track='reload']", visible: false)
+          expect(result).to have_selector("script[src='#{asset_path("hugerte/rails.js")}'][defer][data-turbo-track='reload']", visible: false)
         end
       end
     end
 
-    describe "#tinymce" do
+    describe "#hugerte" do
       before(:each) do
         allow(TinyMCE::Rails).to receive(:configuration).and_return(configuration)
       end
@@ -125,7 +125,7 @@ module TinyMCE::Rails
       it "returns TinyMCE preinit script" do
         result = tinymce_preinit
         expect(result).to have_selector("script", visible: false)
-        expect(result).to include("window.tinymce = window.tinymce || { base: '/assets/tinymce', suffix: '' };")
+        expect(result).to include("window.hugerte = window.hugerte || { base: '/assets/hugerte', suffix: '' };")
       end
     end
   end

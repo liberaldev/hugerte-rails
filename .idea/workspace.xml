@@ -6,10 +6,43 @@
   <component name="ChangeListManager">
     <list default="true" id="1ae4ebf2-4926-409a-9438-fb88b79f5704" name="변경" comment="HugeRTE 전환준비">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/sprockets/hugerte.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/tinymce-rails.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Guardfile" beforeDir="false" afterPath="$PROJECT_DIR$/Guardfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rakefile" beforeDir="false" afterPath="$PROJECT_DIR$/Rakefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/source/tinymce/tinymce.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/source/hugerte/tinymce.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hugerte-rails.gemspec" beforeDir="false" afterPath="$PROJECT_DIR$/hugerte-rails.gemspec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/hugerte/rails/propshaft/asset.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/hugerte/rails/propshaft/asset.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/hugerte/rails/version.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/hugerte/rails/version.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/tasks/tinymce-assets.rake" beforeDir="false" afterPath="$PROJECT_DIR$/lib/tasks/tinymce-assets.rake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/tinymce/rails/asset_installer.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/tinymce/rails/asset_installer/compile.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/tinymce/rails/asset_installer/copy.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/tinymce/rails/asset_installer/copy_no_preserve.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/tinymce/rails/asset_manifest.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/tinymce/rails/asset_manifest/json_manifest.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/tinymce/rails/asset_manifest/null_manifest.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/tinymce/rails/asset_manifest/propshaft_manifest.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/tinymce/rails/asset_manifest/yaml_manifest.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/tinymce/rails/configuration.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/tinymce/rails/configuration_file.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/tinymce/rails/engine.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/tinymce/rails/environment.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/tinymce/rails/helper.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/tinymce/rails/propshaft/asset.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/tinymce/rails/version.rb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/sandbox/config/application.rb" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/config/application.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tinymce-rails.gemspec" beforeDir="false" afterPath="$PROJECT_DIR$/hugerte-rails.gemspec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/fixtures/yaml_manifest/manifest.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spec/fixtures/yaml_manifest/manifest.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/helpers/helper_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/helpers/helper_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/lib/asset_installer_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/lib/asset_installer_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/lib/asset_manifest/json_manifest_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/lib/asset_manifest/json_manifest_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/lib/asset_manifest/null_manifest_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/lib/asset_manifest/null_manifest_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/lib/asset_manifest/propshaft_manifest_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/lib/asset_manifest/propshaft_manifest_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/lib/asset_manifest/yaml_manifest_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/lib/asset_manifest/yaml_manifest_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/lib/asset_manifest_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/lib/asset_manifest_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/lib/configuration_file_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/lib/configuration_file_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/lib/configuration_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/lib/configuration_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/lib/engine_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/lib/engine_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/lib/tinymce_rails_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/lib/tinymce_rails_spec.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,22 +52,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "liberaldev"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;liberaldev&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/liberaldev/hugerte-rails.git",
-    "accountId": "2812227a-58cc-49d5-a005-d631a25d2ac9"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/liberaldev/hugerte-rails.git&quot;,
+    &quot;accountId&quot;: &quot;2812227a-58cc-49d5-a005-d631a25d2ac9&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 1
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2x5YJfDAkY6auylBiZaOzlmu9K9" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -43,11 +76,14 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Rake.update: hugerte-rails.executor": "Run",
     "Ruby.이름이 지정되지 않았습니다.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "com.codeium.enabled": "true",
     "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/user/RubymineProjects/hugerte-rails/gemfiles",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -67,7 +103,26 @@
       <recent name="C:\Users\user\RubymineProjects\hugerte-rails\lib\hugerte" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Ruby.이름이 지정되지 않았습니다">
+    <configuration name="update: hugerte-rails" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
+      <module name="hugerte-rails" />
+      <predefined_log_file enabled="true" id="RUBY_RAKE" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <EXTENSION ID="BundlerRunConfigurationExtension" BUNDLE_MODE="AUTO" bundleExecEnabled="true" />
+      <EXTENSION ID="org.jetbrains.plugins.ruby.rails.run.RailsRunConfigurationExtension" SCRATCH_USE_RAILS_RUNNER="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="update" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TESTOPTS" VALUE="" />
+      <method v="2" />
+    </configuration>
     <configuration name="이름이 지정되지 않았습니다" type="RubyRunConfigurationType" factoryName="Ruby" nameIsGenerated="true">
       <module name="hugerte-rails" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
@@ -81,6 +136,11 @@
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Rake.update: hugerte-rails" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -98,6 +158,7 @@
       <option name="presentableId" value="Default" />
       <updated>1747229331154</updated>
       <workItem from="1747229334535" duration="5590000" />
+      <workItem from="1747235423128" duration="1695000" />
     </task>
     <task id="LOCAL-00001" summary="첫 커밋">
       <option name="closed" value="true" />

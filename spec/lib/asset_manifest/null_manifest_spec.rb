@@ -1,4 +1,4 @@
-require "tinymce/rails/asset_manifest"
+require "hugerte/rails/asset_manifest"
 
 module TinyMCE
   module Rails

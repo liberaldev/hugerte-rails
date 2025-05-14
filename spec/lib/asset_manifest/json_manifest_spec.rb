@@ -1,4 +1,4 @@
-require "tinymce/rails/asset_manifest"
+require "hugerte/rails/asset_manifest"
 
 module TinyMCE
   module Rails
@@ -27,12 +27,12 @@ module TinyMCE
         it "adds files to the manifest without a fingerprint" do
           expect(File).to receive(:stat).with(file).and_return(double(:mtime => mtime, :size => 123))
 
-          manifest.append("tinymce/tiny_mce_jquery.js", file)
+          manifest.append("hugerte/tiny_mce_jquery.js", file)
 
           result = reload_manifest(manifest)
-          expect(result["assets"]["tinymce/tiny_mce_jquery.js"]).to eq("tinymce/tiny_mce_jquery.js")
-          expect(result["files"]["tinymce/tiny_mce_jquery.js"]).to eq({
-            "logical_path" => "tinymce/tiny_mce_jquery.js",
+          expect(result["assets"]["hugerte/tiny_mce_jquery.js"]).to eq("hugerte/tiny_mce_jquery.js")
+          expect(result["files"]["hugerte/tiny_mce_jquery.js"]).to eq({
+            "logical_path" => "hugerte/tiny_mce_jquery.js",
             "mtime" => "2013-02-26T12:29:33+10:30",
             "size" => 123,
             "digest" => nil
@@ -42,23 +42,23 @@ module TinyMCE
 
       describe "#remove" do
         it "removes files from the manifest" do
-          manifest.remove("tinymce.js")
+          manifest.remove("hugerte.js")
 
           result = reload_manifest(manifest)
-          expect(result["assets"]).to_not have_key("tinymce.js")
-          expect(result["files"]).to_not have_key("tinymce-89aa452594633dfb3487381efbe9706e.js")
+          expect(result["assets"]).to_not have_key("hugerte.js")
+          expect(result["files"]).to_not have_key("hugerte-89aa452594633dfb3487381efbe9706e.js")
         end
       end
 
       describe "#remove_digest" do
         it "sets the file digest value to its non-digested version" do
-          manifest.remove_digest("tinymce.js")
+          manifest.remove_digest("hugerte.js")
 
           result = reload_manifest(manifest)
-          expect(result["assets"]["tinymce.js"]).to eq("tinymce.js")
-          expect(result["files"]).to_not have_key("tinymce-89aa452594633dfb3487381efbe9706e.js")
-          expect(result["files"]["tinymce.js"]).to eq({
-            "logical_path" => "tinymce.js",
+          expect(result["assets"]["hugerte.js"]).to eq("hugerte.js")
+          expect(result["files"]).to_not have_key("hugerte-89aa452594633dfb3487381efbe9706e.js")
+          expect(result["files"]["hugerte.js"]).to eq({
+            "logical_path" => "hugerte.js",
             "mtime" => "2013-02-12T20:57:55+10:30",
             "size" => 521386,
             "digest" => nil
@@ -67,16 +67,16 @@ module TinyMCE
 
         it "yields the digested and non-digested file names" do
           expect { |block|
-            manifest.remove_digest("tinymce.js", &block)
-          }.to yield_with_args("tinymce-89aa452594633dfb3487381efbe9706e.js", "tinymce.js")
+            manifest.remove_digest("hugerte.js", &block)
+          }.to yield_with_args("hugerte-89aa452594633dfb3487381efbe9706e.js", "hugerte.js")
         end
       end
 
       describe "#each" do
         it "yields the logical path for each asset that matches the given pattern" do
           result = []
-          manifest.each(/^tinymce/) { |asset| result << asset }
-          expect(result).to eq(["tinymce.js"])
+          manifest.each(/^hugerte/) { |asset| result << asset }
+          expect(result).to eq(["hugerte.js"])
         end
       end
 

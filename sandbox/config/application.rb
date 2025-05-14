@@ -30,10 +30,10 @@ module Sandbox
     config.assets.version = '1.0'
 
     # Precompile application assets
-    config.assets.precompile += %w(tinymce-manual.js)
-    config.assets.precompile << "tinymce/**/es.js"
-    config.assets.precompile << "tinymce/**/es_dlg.js"
+    config.assets.precompile += %w(hugerte-manual.js)
+    config.assets.precompile << "hugerte/**/es.js"
+    config.assets.precompile << "hugerte/**/es_dlg.js"
 
-    # config.tinymce.install = :compile
+    # config.hugerte.install = :compile
   end
 end

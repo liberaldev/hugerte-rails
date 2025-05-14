@@ -6,6 +6,6 @@ class Propshaft::Asset
   # Allow TinyMCE assets to be accessed (in development mode) without a digest
   def fresh?(digest)
     fresh_without_tinymce_exception?(digest) ||
-      (digest.blank? && logical_path.to_s.starts_with?("tinymce/"))
+      (digest.blank? && logical_path.to_s.starts_with?("hugerte/"))
   end
 end

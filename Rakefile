@@ -1,4 +1,4 @@
-require File.expand_path('../lib/tinymce/rails/version', __FILE__)
+require File.expand_path('../lib/hugerte/rails/version', __FILE__)
 
 def step(name)
   print "#{name} ..."
@@ -12,42 +12,42 @@ def download(url, filename)
   `curl -L -# #{url} -o tmp/#{filename}`
 end
 
-desc "Update TinyMCE to version #{TinyMCE::Rails::TINYMCE_VERSION}"
-task :update => [ :fetch, :extract, :rename ]
+desc "Update HugeRTE to version #{HugeRTE::Rails::HUGERTE_VERSION}"
+task :update => [ :fetch, :extract ]
 
 task :fetch do
-  download("http://download.ephox.com/tinymce/community/tinymce_#{TinyMCE::Rails::TINYMCE_VERSION}.zip", "tinymce.zip")
-  download("http://download.ephox.com/tinymce/community/tinymce_#{TinyMCE::Rails::TINYMCE_VERSION}_dev.zip", "tinymce.dev.zip")
+  download("https://github.com/hugerte/hugerte-dist/archive/refs/tags/v#{HugeRTE::Rails::HUGERTE_VERSION}.zip", "hugerte.zip")
 end
 
 task :extract do
   step "Extracting core files" do
-    `rm -rf tmp/tinymce`
-    `unzip -u tmp/tinymce.zip -d tmp`
-    `rm -rf vendor/assets/javascripts/tinymce`
-    `mkdir -p vendor/assets/javascripts/tinymce`
-    `mv tmp/tinymce/js/tinymce/* vendor/assets/javascripts/tinymce/`
+    `rm -rf tmp/hugerte-dist-*`
+    `unzip -u tmp/hugerte.zip -d tmp`
+    `rm -rf vendor/assets/javascripts/hugerte`
+    `mkdir -p vendor/assets/javascripts/hugerte`
+    `cp -r tmp/hugerte-dist-#{HugeRTE::Rails::HUGERTE_VERSION}/* vendor/assets/javascripts/hugerte/`
   end
 
   step "Extracting unminified source" do
-   `rm -rf tmp/tinymce`
-   `unzip -u tmp/tinymce.dev.zip -d tmp`
-   `mkdir -p app/assets/source/tinymce`
-   `mv tmp/tinymce/js/tinymce/tinymce.js app/assets/source/tinymce/tinymce.js`
+   `mkdir -p app/assets/source/hugerte`
+   `mv tmp/hugerte-dist-#{HugeRTE::Rails::HUGERTE_VERSION}/hugerte.js app/assets/source/hugerte/hugerte.js`
+   `rm -rf tmp/hugerte-dist-#{HugeRTE::Rails::HUGERTE_VERSION}`
   end
 end
 
+=begin
 task :rename do
   step "Renaming files" do
-    Dir["vendor/assets/javascripts/tinymce/**/*.min.js"].each do |file|
+    Dir["vendor/assets/javascripts/hugerte/**/*.min.js"].each do |file|
       FileUtils.mv(file, file.sub(/\.min\.js$/, '.js'))
     end
 
-    Dir["vendor/assets/javascripts/tinymce/**/*.min.css"].each do |file|
+    Dir["vendor/assets/javascripts/hugerte/**/*.min.css"].each do |file|
       FileUtils.cp(file, file.sub(/\.min\.css$/, '.css'))
     end
   end
 end
+=end
 
 require 'rspec/core/rake_task'
 RSpec::Core::RakeTask.new(:spec)

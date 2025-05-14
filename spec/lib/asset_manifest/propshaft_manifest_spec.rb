@@ -1,4 +1,4 @@
-require "tinymce/rails/asset_manifest"
+require "hugerte/rails/asset_manifest"
 
 module TinyMCE
   module Rails
@@ -13,49 +13,49 @@ module TinyMCE
         result = reload_manifest(manifest)
         expect(result["application.css"]).to eq("application-c2cd8c57.css")
         expect(result["application.js"]).to eq("application-bfcdf840.js")
-        expect(result["tinymce/tinymce.js"]).to eq("tinymce/tinymce-52aa7906.js")
+        expect(result["hugerte/hugerte.js"]).to eq("hugerte/hugerte-52aa7906.js")
       end
 
       describe "#append" do
         let(:file) { double }
 
         it "adds files to the manifest without a fingerprint" do
-          manifest.append("tinymce/tinymce.js", file)
+          manifest.append("hugerte/hugerte.js", file)
 
           result = reload_manifest(manifest)
-          expect(result["tinymce/tinymce.js"]).to eq("tinymce/tinymce.js")
+          expect(result["hugerte/hugerte.js"]).to eq("hugerte/hugerte.js")
         end
       end
 
       describe "#remove" do
         it "removes files from the manifest" do
-          manifest.remove("tinymce/tinymce.js")
+          manifest.remove("hugerte/hugerte.js")
 
           result = reload_manifest(manifest)
-          expect(result).to_not have_key("tinymce/tinymce.js")
+          expect(result).to_not have_key("hugerte/hugerte.js")
         end
       end
 
       describe "#remove_digest" do
         it "sets the file digest value to its non-digested version" do
-          manifest.remove_digest("tinymce/tinymce.js")
+          manifest.remove_digest("hugerte/hugerte.js")
 
           result = reload_manifest(manifest)
-          expect(result["tinymce/tinymce.js"]).to eq("tinymce/tinymce.js")
+          expect(result["hugerte/hugerte.js"]).to eq("hugerte/hugerte.js")
         end
 
         it "yields the digested and non-digested file names" do
           expect { |block|
-            manifest.remove_digest("tinymce/tinymce.js", &block)
-          }.to yield_with_args("tinymce/tinymce-52aa7906.js", "tinymce/tinymce.js")
+            manifest.remove_digest("hugerte/hugerte.js", &block)
+          }.to yield_with_args("hugerte/hugerte-52aa7906.js", "hugerte/hugerte.js")
         end
       end
 
       describe "#each" do
         it "yields the logical path for each asset that matches the given pattern" do
           result = []
-          manifest.each(/^tinymce/) { |asset| result << asset }
-          expect(result).to eq(["tinymce/tinymce.js"])
+          manifest.each(/^hugerte/) { |asset| result << asset }
+          expect(result).to eq(["hugerte/hugerte.js"])
         end
       end
 

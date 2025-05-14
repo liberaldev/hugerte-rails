@@ -1,4 +1,4 @@
-require "tinymce/rails/asset_manifest"
+require "hugerte/rails/asset_manifest"
 
 module TinyMCE
   module Rails
@@ -16,42 +16,42 @@ module TinyMCE
 
       describe "#append" do
         it "adds files to the manifest without a fingerprint" do
-          manifest.append("tinymce/tiny_mce_jquery.js", double)
+          manifest.append("hugerte/tiny_mce_jquery.js", double)
 
           result = reload_manifest(manifest)
-          expect(result["tinymce/tiny_mce_jquery.js"]).to eq("tinymce/tiny_mce_jquery.js")
+          expect(result["hugerte/tiny_mce_jquery.js"]).to eq("hugerte/tiny_mce_jquery.js")
         end
       end
 
       describe "#remove" do
         it "removes files from the manifest" do
-          manifest.remove("tinymce.js")
+          manifest.remove("hugerte.js")
 
           result = reload_manifest(manifest)
-          expect(result).to_not have_key("tinymce.js")
+          expect(result).to_not have_key("hugerte.js")
         end
       end
 
       describe "#remove_digest" do
         it "sets the file digest value to its non-digested version" do
-          manifest.remove_digest("tinymce.js")
+          manifest.remove_digest("hugerte.js")
 
           result = reload_manifest(manifest)
-          expect(result["tinymce.js"]).to eq("tinymce.js")
+          expect(result["hugerte.js"]).to eq("hugerte.js")
         end
 
         it "yields the digested and non-digested file names" do
           expect { |block|
-            manifest.remove_digest("tinymce.js", &block)
-          }.to yield_with_args("tinymce-025f3a2beeeb18ce2b5f2dafdb14eb86.js", "tinymce.js")
+            manifest.remove_digest("hugerte.js", &block)
+          }.to yield_with_args("hugerte-025f3a2beeeb18ce2b5f2dafdb14eb86.js", "hugerte.js")
         end
       end
 
       describe "#each" do
         it "yields the logical path for each asset that matches the given pattern" do
           result = []
-          manifest.each(/^tinymce\//) { |asset| result << asset }
-          expect(result).to eq ["tinymce/tiny_mce.js"]
+          manifest.each(/^hugerte\//) { |asset| result << asset }
+          expect(result).to eq ["hugerte/tiny_mce.js"]
         end
       end
 

@@ -7,7 +7,7 @@ module TinyMCE::Rails
       config = ConfigurationFile.new(file).configuration
       expect(config).to be_an_instance_of(Configuration)
       expect(config.options).to eq(
-        "selector" => "textarea.tinymce",
+        "selector" => "textarea.hugerte",
         "cache_suffix" => "?v=#{VERSION}",
         "plugins" => %w(inlinepopups imageselector contextmenu paste table fullscreen),
         "theme_advanced_toolbar_location" => "top",
@@ -26,7 +26,7 @@ module TinyMCE::Rails
 
       expect(config[:default].options).to eq(Configuration.defaults)
       expect(config[:alternate].options).to eq(
-        "selector" => "textarea.tinymce",
+        "selector" => "textarea.hugerte",
         "cache_suffix" => "?v=#{VERSION}",
         "skin" => "alternate"
       )

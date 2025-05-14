@@ -16,7 +16,7 @@ Instructions
 **1. Add `tinymce-rails` to your Gemfile**
 
 ```ruby
-gem 'tinymce-rails'
+gem 'hugerte-rails'
 ```
 
 Be sure to add to the global group, not the `assets` group. Then run `bundle install`.
@@ -60,7 +60,7 @@ Use *one* of the following options to include TinyMCE assets.
 (1) Add to your application.js (Sprockets only):
 
 ```js
-//= require tinymce
+//= require hugerte
 ```
 
 or (2) add the script tag to your layout using the `tinymce_assets` helper:

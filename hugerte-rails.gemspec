@@ -1,8 +1,8 @@
-require File.expand_path('../lib/tinymce/rails/version', __FILE__)
+require File.expand_path('../lib/hugerte/rails/version', __FILE__)
 
 Gem::Specification.new do |s|
-  s.name = "tinymce-rails"
-  s.version = TinyMCE::Rails::VERSION
+  s.name = "hugerte-rails"
+  s.version = HugeRTE::Rails::VERSION
   s.summary = "Rails asset pipeline integration for TinyMCE."
   s.description = "Seamlessly integrates TinyMCE into the Rails asset pipeline introduced in Rails 3.1."
   s.files = Dir["README.md", "LICENSE", "Rakefile", "app/**/*", "lib/**/*", "vendor/assets/**/*"]
