@@ -1,8 +1,8 @@
 <% content_for :javascript do %>
-  <%= tinymce_assets "data-turbolinks-track": :reload %>
+  <%= hugerte_assets "data-turbolinks-track": :reload %>
 <% end %>
 
-<h1>TinyMCE Helpers</h1>
+<h1>HugeRTE Helpers</h1>
 
 <ul>
   <li><%= link_to 'Back to index', root_path %></li>
@@ -14,8 +14,8 @@
   <% end %>
 </ul>
 
-<%= text_area_tag :editor1, "", :class => "tinymce", :rows => 20, :cols => 60 %>
-<%= text_area_tag :editor2, "", :class => "tinymce", :rows => 20, :cols => 60 %>
+<%= text_area_tag :editor1, "", :class => "hugerte", :rows => 20, :cols => 60 %>
+<%= text_area_tag :editor2, "", :class => "hugerte", :rows => 20, :cols => 60 %>
 
-<%= tinymce :selector => "#editor1", :language => I18n.locale %>
-<%= tinymce :custom, :selector => "#editor2", :language => I18n.locale %>
+<%= hugerte :selector => "#editor1", :language => I18n.locale %>
+<%= hugerte :custom, :selector => "#editor2", :language => I18n.locale %>

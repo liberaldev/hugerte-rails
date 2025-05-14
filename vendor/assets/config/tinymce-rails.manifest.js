@@ -1,3 +1,3 @@
-//= link_tree ../javascripts/tinymce .js
-//= link_tree ../javascripts/tinymce .css
-//= link_tree ../javascripts/tinymce .woff
+//= link_tree ../javascripts/hugerte .js
+//= link_tree ../javascripts/hugerte .css
+//= link_tree ../javascripts/hugerte .woff
