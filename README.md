@@ -67,10 +67,10 @@ or (2) add the script tag to your layout using the `tinymce_assets` helper:
 
 ```erb
 <%= tinymce_assets data: { turbo_track: "reload" } %>
-#=> <script type="text/javascript" src="/assets/tinymce.js" data-turbo-track="reload">
+#=> <script type="text/javascript" src="/assets/hugerte.js" data-turbo-track="reload">
 ```
 
-When using Propshaft, the `tinymce_assets` helper adds multiple script tags including the pre-init code (available via the `tinymce_preinit` helper), as well as `tinymce/tinymce.js` and `tinymce/rails.js`. You may prefer to selectively include these manually depending on your requirements.
+When using Propshaft, the `tinymce_assets` helper adds multiple script tags including the pre-init code (available via the `tinymce_preinit` helper), as well as `tinymce/hugerte.js` and `tinymce/rails.js`. You may prefer to selectively include these manually depending on your requirements.
 
 For Sprockets, these are bundled together into one script tag.
 
