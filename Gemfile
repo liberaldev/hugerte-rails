@@ -11,6 +11,7 @@ gem 'rails', '~> 8.0.1'
 gem 'sprockets-rails'
 # gem 'propshaft'
 
+# gem 'logger'
 gem 'turbolinks'
 gem 'uglifier'
 gem 'puma'

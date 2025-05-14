@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ae4ebf2-4926-409a-9438-fb88b79f5704" name="변경" comment="config 파일 변경" />
+    <list default="true" id="1ae4ebf2-4926-409a-9438-fb88b79f5704" name="변경" comment="config 파일 변경">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,7 +74,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1747229331154</updated>
-      <workItem from="1747229334535" duration="1596000" />
+      <workItem from="1747229334535" duration="2429000" />
     </task>
     <task id="LOCAL-00001" summary="첫 커밋">
       <option name="closed" value="true" />
@@ -154,7 +156,23 @@
       <option name="project" value="LOCAL" />
       <updated>1747230943441</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="config 파일 변경">
+      <option name="closed" value="true" />
+      <created>1747231145243</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1747231145243</updated>
+    </task>
+    <task id="LOCAL-00012" summary="config 파일 변경">
+      <option name="closed" value="true" />
+      <created>1747231389832</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1747231389832</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
