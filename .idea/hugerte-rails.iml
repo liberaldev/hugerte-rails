@@ -11,17 +11,17 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" scope="PROVIDED" name="actioncable (v7.1.5.1, Remote-mise: ruby-3.3.6 (-p108) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="actionmailbox (v7.1.5.1, Remote-mise: ruby-3.3.6 (-p108) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="actionmailer (v7.1.5.1, Remote-mise: ruby-3.3.6 (-p108) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="actionpack (v7.1.5.1, Remote-mise: ruby-3.3.6 (-p108) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="actiontext (v7.1.5.1, Remote-mise: ruby-3.3.6 (-p108) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="actionview (v7.1.5.1, Remote-mise: ruby-3.3.6 (-p108) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="activejob (v7.1.5.1, Remote-mise: ruby-3.3.6 (-p108) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="activemodel (v7.1.5.1, Remote-mise: ruby-3.3.6 (-p108) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="activerecord (v7.1.5.1, Remote-mise: ruby-3.3.6 (-p108) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="activestorage (v7.1.5.1, Remote-mise: ruby-3.3.6 (-p108) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="activesupport (v7.1.5.1, Remote-mise: ruby-3.3.6 (-p108) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="actioncable (v8.0.2, Remote-mise: ruby-3.3.6 (-p108) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="actionmailbox (v8.0.2, Remote-mise: ruby-3.3.6 (-p108) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="actionmailer (v8.0.2, Remote-mise: ruby-3.3.6 (-p108) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="actionpack (v8.0.2, Remote-mise: ruby-3.3.6 (-p108) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="actiontext (v8.0.2, Remote-mise: ruby-3.3.6 (-p108) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="actionview (v8.0.2, Remote-mise: ruby-3.3.6 (-p108) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="activejob (v8.0.2, Remote-mise: ruby-3.3.6 (-p108) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="activemodel (v8.0.2, Remote-mise: ruby-3.3.6 (-p108) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="activerecord (v8.0.2, Remote-mise: ruby-3.3.6 (-p108) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="activestorage (v8.0.2, Remote-mise: ruby-3.3.6 (-p108) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="activesupport (v8.0.2, Remote-mise: ruby-3.3.6 (-p108) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="addressable (v2.8.7, Remote-mise: ruby-3.3.6 (-p108) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="base64 (v0.2.0, Remote-mise: ruby-3.3.6 (-p108) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="benchmark (v0.4.0, Remote-mise: ruby-3.3.6 (-p108) [gem]" level="application" />
@@ -48,7 +48,6 @@
     <orderEntry type="library" scope="PROVIDED" name="matrix (v0.4.2, Remote-mise: ruby-3.3.6 (-p108) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mini_mime (v1.1.5, Remote-mise: ruby-3.3.6 (-p108) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="minitest (v5.25.5, Remote-mise: ruby-3.3.6 (-p108) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="mutex_m (v0.3.0, Remote-mise: ruby-3.3.6 (-p108) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="net-imap (v0.5.8, Remote-mise: ruby-3.3.6 (-p108) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="net-pop (v0.1.2, Remote-mise: ruby-3.3.6 (-p108) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="net-protocol (v0.2.2, Remote-mise: ruby-3.3.6 (-p108) [gem]" level="application" />
@@ -66,10 +65,10 @@
     <orderEntry type="library" scope="PROVIDED" name="rack-session (v2.1.1, Remote-mise: ruby-3.3.6 (-p108) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack-test (v2.2.0, Remote-mise: ruby-3.3.6 (-p108) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rackup (v2.2.1, Remote-mise: ruby-3.3.6 (-p108) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rails (v7.1.5.1, Remote-mise: ruby-3.3.6 (-p108) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rails (v8.0.2, Remote-mise: ruby-3.3.6 (-p108) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rails-dom-testing (v2.2.0, Remote-mise: ruby-3.3.6 (-p108) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rails-html-sanitizer (v1.6.2, Remote-mise: ruby-3.3.6 (-p108) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="railties (v7.1.5.1, Remote-mise: ruby-3.3.6 (-p108) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="railties (v8.0.2, Remote-mise: ruby-3.3.6 (-p108) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rake (v13.2.1, Remote-mise: ruby-3.3.6 (-p108) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rdoc (v6.13.1, Remote-mise: ruby-3.3.6 (-p108) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="regexp_parser (v2.10.0, Remote-mise: ruby-3.3.6 (-p108) [gem]" level="application" />
@@ -90,6 +89,8 @@
     <orderEntry type="library" scope="PROVIDED" name="turbolinks-source (v5.2.0, Remote-mise: ruby-3.3.6 (-p108) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tzinfo (v2.0.6, Remote-mise: ruby-3.3.6 (-p108) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="uglifier (v4.2.1, Remote-mise: ruby-3.3.6 (-p108) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="uri (v1.0.3, Remote-mise: ruby-3.3.6 (-p108) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="useragent (v0.16.11, Remote-mise: ruby-3.3.6 (-p108) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="websocket-driver (v0.7.7, Remote-mise: ruby-3.3.6 (-p108) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="websocket-extensions (v0.1.5, Remote-mise: ruby-3.3.6 (-p108) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="xpath (v3.2.0, Remote-mise: ruby-3.3.6 (-p108) [gem]" level="application" />
