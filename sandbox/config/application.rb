@@ -31,7 +31,7 @@ module Sandbox
 
     # Precompile application assets
     config.assets.precompile += %w(hugerte-manual.js)
-    config.assets.precompile << "hugerte/**/es.js"
+    config.assets.precompile << "hugerte/**/ko_KR.js"
     config.assets.precompile << "hugerte/**/es_dlg.js"
 
     # config.hugerte.install = :compile

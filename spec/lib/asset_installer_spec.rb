@@ -32,14 +32,14 @@ module HugeRTE
 
         it "symlinks non-digested asset paths" do
           digested_asset = "hugerte/langs/es-abcde1234567890.js"
-          asset = "hugerte/langs/es.js"
+          asset = "hugerte/langs/ko_KR.js"
 
           allow(manifest).to receive(:each).and_yield(asset)
           expect(manifest).to receive(:asset_path).with(asset).and_yield(digested_asset, asset)
 
           allow(File).to receive(:exist?).and_return(true)
 
-          expect(FileUtils).to receive(:ln_s).with("es-abcde1234567890.js", "/assets/hugerte/langs/es.js", :force => true)
+          expect(FileUtils).to receive(:ln_s).with("es-abcde1234567890.js", "/assets/hugerte/langs/ko_KR.js", :force => true)
 
           install
         end
@@ -54,12 +54,12 @@ module HugeRTE
 
         it "removes digests from existing HugeRTE assets in the manifest" do
           digested_asset = "hugerte/langs/es-abcde1234567890.js"
-          asset = "hugerte/langs/es.js"
+          asset = "hugerte/langs/ko_KR.js"
 
           allow(manifest).to receive(:each).and_yield(asset)
           expect(manifest).to receive(:remove_digest).with(asset).and_yield(digested_asset, asset)
           allow(File).to receive(:exist?).and_return(true)
-          expect(FileUtils).to receive(:mv).with("/assets/hugerte/langs/es-abcde1234567890.js", "/assets/hugerte/langs/es.js", :force => true)
+          expect(FileUtils).to receive(:mv).with("/assets/hugerte/langs/es-abcde1234567890.js", "/assets/hugerte/langs/ko_KR.js", :force => true)
 
           install
         end

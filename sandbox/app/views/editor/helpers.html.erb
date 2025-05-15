@@ -2,20 +2,20 @@
   <%= hugerte_assets "data-turbolinks-track": :reload %>
 <% end %>
 
-<h1>HugeRTE Helpers</h1>
+<h1 lang="en">HugeRTE Helpers</h1>
 
 <ul>
-  <li><%= link_to 'Back to index', root_path %></li>
+  <li><%= link_to t('back_to_index'), root_path %></li>
 
-  <% if params[:locale] == "es" %>
-    <li><%= link_to 'Switch to English', :locale => nil %></li>
+  <% if params[:locale] == "ko" %>
+    <li><%= link_to 'Switch to English', { locale: "en" }, { lang: "en" } %></li>
   <% else %>
-    <li><%= link_to 'Switch to Spanish', :locale => "es" %></li>
+    <li><%= link_to '한국어로 바꾸기', { locale: "ko" }, { lang: "ko" } %></li>
   <% end %>
 </ul>
 
 <%= text_area_tag :editor1, "", :class => "hugerte", :rows => 20, :cols => 60 %>
 <%= text_area_tag :editor2, "", :class => "hugerte", :rows => 20, :cols => 60 %>
 
-<%= hugerte :selector => "#editor1", :language => I18n.locale %>
-<%= hugerte :custom, :selector => "#editor2", :language => I18n.locale %>
+<%= hugerte :selector => "#editor1", :language => (I18n.locale.to_s == "ko" || I18n.locale == :ko) ? "ko_KR" : I18n.locale %>
+<%= hugerte :custom, :selector => "#editor2", :language => (I18n.locale.to_s == "ko" || I18n.locale == :ko)? "ko_KR" : I18n.locale %>
