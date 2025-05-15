@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-module TinyMCE::Rails
+module HugeRTE::Rails
   describe ConfigurationFile do
     it "loads single-configuration YAML files" do
       file = File.expand_path("../fixtures/single.yml", File.dirname(__FILE__))

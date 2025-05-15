@@ -1,6 +1,6 @@
 require "hugerte/rails/asset_manifest"
 
-module TinyMCE
+module HugeRTE
   module Rails
     describe NullManifest do
       subject { NullManifest.new }

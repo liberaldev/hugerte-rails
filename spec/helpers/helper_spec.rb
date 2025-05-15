@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-module TinyMCE::Rails
+module HugeRTE::Rails
   describe Helper do
     if defined?(Sprockets)
       include Sprockets::Rails::Helper
@@ -22,30 +22,30 @@ module TinyMCE::Rails
 
     let(:content_security_policy_nonce) { "nonce" }
 
-    describe "#tinymce_assets" do
+    describe "#hugerte_assets" do
       context "using Sprockets", if: defined?(Sprockets) do
-        it "returns a bundled TinyMCE javascript tag" do
-          script = tinymce_assets
+        it "returns a bundled HugeRTE javascript tag" do
+          script = hugerte_assets
           expect(script).to have_selector("script[src='#{asset_path("hugerte.js")}'][data-turbolinks-track='reload']", visible: false)
         end
 
         it "allows custom attributes to be set on the script tag" do
-          script = tinymce_assets(defer: true, data: { turbo_track: "reload" })
+          script = hugerte_assets(defer: true, data: { turbo_track: "reload" })
           expect(script).to have_selector("script[src='#{asset_path("hugerte.js")}'][defer][data-turbo-track='reload']", visible: false)
         end
       end
 
       context "using Propshaft", if: defined?(Propshaft) do
-        it "returns TinyMCE preinit code and separate javascript asset tags" do
-          result = tinymce_assets
-          expect(result).to include(tinymce_preinit)
+        it "returns HugeRTE preinit code and separate javascript asset tags" do
+          result = hugerte_assets
+          expect(result).to include(hugerte_preinit)
           expect(result).to have_selector("script[src='#{asset_path("hugerte/hugerte.js")}'][data-turbolinks-track='reload']", visible: false)
           expect(result).to have_selector("script[src='#{asset_path("hugerte/rails.js")}'][data-turbolinks-track='reload']", visible: false)
         end
 
         it "allows custom attributes to be set on the script tags" do
-          result = tinymce_assets(defer: true, data: { turbo_track: "reload" })
-          expect(result).to include(tinymce_preinit)
+          result = hugerte_assets(defer: true, data: { turbo_track: "reload" })
+          expect(result).to include(hugerte_preinit)
           expect(result).to have_selector("script[src='#{asset_path("hugerte/hugerte.js")}'][defer][data-turbo-track='reload']", visible: false)
           expect(result).to have_selector("script[src='#{asset_path("hugerte/rails.js")}'][defer][data-turbo-track='reload']", visible: false)
         end
@@ -54,7 +54,7 @@ module TinyMCE::Rails
 
     describe "#hugerte" do
       before(:each) do
-        allow(TinyMCE::Rails).to receive(:configuration).and_return(configuration)
+        allow(HugeRTE::Rails).to receive(:configuration).and_return(configuration)
       end
 
       context "single-configuration" do
@@ -62,28 +62,28 @@ module TinyMCE::Rails
           Configuration.new("theme" => "advanced", "plugins" => %w(paste table fullscreen))
         }
 
-        it "initializes TinyMCE using global configuration" do
-          result = tinymce
+        it "initializes HugeRTE using global configuration" do
+          result = hugerte
           expect(result).to have_selector("script", visible: false)
-          expect(result).to include('TinyMCERails.configuration.default = {')
+          expect(result).to include('HugeRTERails.configuration.default = {')
           expect(result).to include('theme: "advanced"')
           expect(result).to include('plugins: "paste,table,fullscreen"')
           expect(result).to include('};')
         end
 
-        it "initializes TinyMCE with passed in options" do
-          result = tinymce(:theme => "simple")
+        it "initializes HugeRTE with passed in options" do
+          result = hugerte(:theme => "simple")
           expect(result).to include('theme: "simple"')
           expect(result).to include('plugins: "paste,table,fullscreen"')
         end
 
         it "outputs function strings without quotes" do
-          result = tinymce(:oninit => "function() { alert('Hello'); }")
+          result = hugerte(:oninit => "function() { alert('Hello'); }")
           expect(result).to include('oninit: function() { alert(\'Hello\'); }')
         end
 
         it "outputs nested function strings without quotes" do
-          result = tinymce(:nested => { :oninit => "function() { alert('Hello'); }" })
+          result = hugerte(:nested => { :oninit => "function() { alert('Hello'); }" })
           expect(result).to include('oninit: function() { alert(\'Hello\'); }')
         end
       end
@@ -96,34 +96,34 @@ module TinyMCE::Rails
           )
         }
 
-        it "initializes TinyMCE with default configuration" do
-          result = tinymce
+        it "initializes HugeRTE with default configuration" do
+          result = hugerte
           expect(result).to include('theme: "advanced"')
           expect(result).to include('plugins: "paste,table"')
         end
 
         it "merges passed in options with default configuration" do
-          result = tinymce(:theme => "simple")
+          result = hugerte(:theme => "simple")
           expect(result).to include('theme: "simple"')
           expect(result).to include('plugins: "paste,table"')
         end
 
-        it "initializes TinyMCE with custom configuration" do
-          result = tinymce(:alternate)
+        it "initializes HugeRTE with custom configuration" do
+          result = hugerte(:alternate)
           expect(result).to include('skin: "alternate"')
         end
 
         it "merges passed in options with custom configuration" do
-          result = tinymce(:alternate, :theme => "simple")
+          result = hugerte(:alternate, :theme => "simple")
           expect(result).to include('theme: "simple"')
           expect(result).to include('skin: "alternate"')
         end
       end
     end
 
-    describe "#tinymce_preinit" do
-      it "returns TinyMCE preinit script" do
-        result = tinymce_preinit
+    describe "#hugerte_preinit" do
+      it "returns HugeRTE preinit script" do
+        result = hugerte_preinit
         expect(result).to have_selector("script", visible: false)
         expect(result).to include("window.hugerte = window.hugerte || { base: '/assets/hugerte', suffix: '' };")
       end

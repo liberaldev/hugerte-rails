@@ -1,6 +1,6 @@
 require "hugerte/rails/asset_installer"
 
-module TinyMCE
+module HugeRTE
   module Rails
     describe AssetInstaller do
       let(:assets) { Pathname.new(File.expand_path(File.dirname(__FILE__) + "/../../vendor/assets/javascripts/hugerte")) }
@@ -20,7 +20,7 @@ module TinyMCE
       end
 
       before(:each) do
-        stub_const("TinyMCE::Rails::AssetManifest", double(:load => manifest))
+        stub_const("HugeRTE::Rails::AssetManifest", double(:load => manifest))
       end
 
       describe "compile strategy" do
@@ -52,7 +52,7 @@ module TinyMCE
           allow(FileUtils).to receive(:rm)
         end
 
-        it "removes digests from existing TinyMCE assets in the manifest" do
+        it "removes digests from existing HugeRTE assets in the manifest" do
           digested_asset = "hugerte/langs/es-abcde1234567890.js"
           asset = "hugerte/langs/es.js"
 
@@ -64,7 +64,7 @@ module TinyMCE
           install
         end
 
-        it "adds TinyMCE assets to the manifest" do
+        it "adds HugeRTE assets to the manifest" do
           expect(manifest).to receive(:append).with("hugerte/hugerte.js", assets.parent.join("hugerte/hugerte.js"))
           expect(manifest).to receive(:append).with("hugerte/themes/silver/theme.js", assets.parent.join("hugerte/themes/silver/theme.js"))
           install
@@ -81,7 +81,7 @@ module TinyMCE
 
         it_behaves_like "copy strategies"
 
-        it "copies TinyMCE assets to the target directory" do
+        it "copies HugeRTE assets to the target directory" do
           expect(FileUtils).to receive(:cp_r).with(assets, target, :preserve => true)
           install
         end
@@ -92,7 +92,7 @@ module TinyMCE
 
         it_behaves_like "copy strategies"
 
-        it "copies TinyMCE assets to the target directory without preserving file modes" do
+        it "copies HugeRTE assets to the target directory without preserving file modes" do
           expect(FileUtils).to receive(:cp_r).with(assets, target)
           install
         end

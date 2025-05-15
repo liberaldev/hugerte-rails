@@ -1,6 +1,6 @@
 require "hugerte/rails/asset_manifest"
 
-module TinyMCE
+module HugeRTE
   module Rails
     describe YamlManifest do
       subject(:manifest) { YamlManifest.new(fixture("yaml_manifest/manifest.yml")) }
@@ -16,10 +16,10 @@ module TinyMCE
 
       describe "#append" do
         it "adds files to the manifest without a fingerprint" do
-          manifest.append("hugerte/tiny_mce_jquery.js", double)
+          manifest.append("hugerte/huge_rte_jquery.js", double)
 
           result = reload_manifest(manifest)
-          expect(result["hugerte/tiny_mce_jquery.js"]).to eq("hugerte/tiny_mce_jquery.js")
+          expect(result["hugerte/huge_rte_jquery.js"]).to eq("hugerte/huge_rte_jquery.js")
         end
       end
 
@@ -51,7 +51,7 @@ module TinyMCE
         it "yields the logical path for each asset that matches the given pattern" do
           result = []
           manifest.each(/^hugerte\//) { |asset| result << asset }
-          expect(result).to eq ["hugerte/tiny_mce.js"]
+          expect(result).to eq ["hugerte/huge_rte.js"]
         end
       end
 
