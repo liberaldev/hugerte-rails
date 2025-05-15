@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ae4ebf2-4926-409a-9438-fb88b79f5704" name="변경" comment="edit tinymce.yml">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/config/tinymce.yml" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/config/hugerte.yml" afterDir="false" />
-    </list>
+    <list default="true" id="1ae4ebf2-4926-409a-9438-fb88b79f5704" name="변경" comment="edit README.md" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -139,7 +136,7 @@
       <workItem from="1747272607458" duration="43000" />
       <workItem from="1747272659602" duration="1832000" />
       <workItem from="1747295294883" duration="168000" />
-      <workItem from="1747303709989" duration="4480000" />
+      <workItem from="1747303709989" duration="6445000" />
     </task>
     <task id="LOCAL-00001" summary="첫 커밋">
       <option name="closed" value="true" />
@@ -325,7 +322,39 @@
       <option name="project" value="LOCAL" />
       <updated>1747307678588</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="변경된 코드에 맞게 tinymce.yml을 ehugerte.yml로 이름 변경">
+      <option name="closed" value="true" />
+      <created>1747308453164</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1747308453164</updated>
+    </task>
+    <task id="LOCAL-00025" summary="edit hugerte-rails.gemspec">
+      <option name="closed" value="true" />
+      <created>1747308672541</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1747308672541</updated>
+    </task>
+    <task id="LOCAL-00026" summary="edit README.md">
+      <option name="closed" value="true" />
+      <created>1747309914788</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1747309914788</updated>
+    </task>
+    <task id="LOCAL-00027" summary="edit README.md">
+      <option name="closed" value="true" />
+      <created>1747310108620</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1747310108620</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -361,7 +390,10 @@
     <MESSAGE value="edit workspace.xml" />
     <MESSAGE value="edit LICENSE" />
     <MESSAGE value="edit tinymce.yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit tinymce.yml" />
+    <MESSAGE value="변경된 코드에 맞게 tinymce.yml을 ehugerte.yml로 이름 변경" />
+    <MESSAGE value="edit hugerte-rails.gemspec" />
+    <MESSAGE value="edit README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit README.md" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/hugerte_rails@__.rcov" NAME="이름이 지정되지 않았습니다 커버리지 결과" MODIFIED="1747295455211" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" MODULE_NAME="hugerte-rails" />
