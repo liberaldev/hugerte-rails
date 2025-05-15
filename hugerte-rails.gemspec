@@ -4,7 +4,7 @@ Gem::Specification.new do |s|
   s.name = "hugerte-rails"
   s.version = HugeRTE::Rails::VERSION
   s.summary = "Rails asset pipeline integration for HugeRTE."
-  s.description = "Seamlessly integrates TinyMCE into the Rails asset pipeline introduced in Rails 3.1."
+  s.description = "Seamlessly integrates HugeRTE into the Rails asset pipeline introduced in Rails 3.1."
   s.files = Dir["README.md", "LICENSE", "Rakefile", "app/**/*", "lib/**/*", "vendor/assets/**/*"]
   s.authors = ["Liberal Dev", "Sam Pohlenz"]
   s.email = ""
