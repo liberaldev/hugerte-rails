@@ -8,3 +8,4 @@ custom:
     - table
     - fullscreen
     - link
+  newline_behavior: 'invert'

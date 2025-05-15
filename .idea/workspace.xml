@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ae4ebf2-4926-409a-9438-fb88b79f5704" name="변경" comment="update .idea" />
+    <list default="true" id="1ae4ebf2-4926-409a-9438-fb88b79f5704" name="변경" comment="edit LICENSE" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -136,7 +136,7 @@
       <workItem from="1747272607458" duration="43000" />
       <workItem from="1747272659602" duration="1832000" />
       <workItem from="1747295294883" duration="168000" />
-      <workItem from="1747303709989" duration="3507000" />
+      <workItem from="1747303709989" duration="3826000" />
     </task>
     <task id="LOCAL-00001" summary="첫 커밋">
       <option name="closed" value="true" />
@@ -298,7 +298,23 @@
       <option name="project" value="LOCAL" />
       <updated>1747307178923</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="edit workspace.xml">
+      <option name="closed" value="true" />
+      <created>1747307468592</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1747307468592</updated>
+    </task>
+    <task id="LOCAL-00022" summary="edit LICENSE">
+      <option name="closed" value="true" />
+      <created>1747307477774</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1747307477774</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -321,7 +337,6 @@
     <MESSAGE value="logger 문제 수정" />
     <MESSAGE value="workspace.xml 수정" />
     <MESSAGE value="레일즈 8로 변경" />
-    <MESSAGE value="edit workspace.xml" />
     <MESSAGE value="레일즈 8.0 관련 파일 추가" />
     <MESSAGE value="config 파일 변경" />
     <MESSAGE value="logger gem 기록" />
@@ -332,7 +347,9 @@
     <MESSAGE value="제이슨 메니패스트 테스트 수정" />
     <MESSAGE value="update .gitignore" />
     <MESSAGE value="update .idea" />
-    <option name="LAST_COMMIT_MESSAGE" value="update .idea" />
+    <MESSAGE value="edit workspace.xml" />
+    <MESSAGE value="edit LICENSE" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit LICENSE" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/hugerte_rails@__.rcov" NAME="이름이 지정되지 않았습니다 커버리지 결과" MODIFIED="1747295455211" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" MODULE_NAME="hugerte-rails" />
