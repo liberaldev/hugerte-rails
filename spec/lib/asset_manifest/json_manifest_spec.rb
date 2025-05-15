@@ -52,13 +52,13 @@ module HugeRTE
 
       describe "#remove_digest" do
         it "sets the file digest value to its non-digested version" do
-          manifest.remove_digest("tinymce.js")
+          manifest.remove_digest("hugerte.js")
 
           result = reload_manifest(manifest)
-          expect(result["assets"]["tinymce.js"]).to eq("tinymce.js")
-          expect(result["files"]).to_not have_key("tinymce-89aa452594633dfb3487381efbe9706e.js")
-          expect(result["files"]["tinymce.js"]).to eq({
-            "logical_path" => "tinymce.js",
+          expect(result["assets"]["hugerte.js"]).to eq("hugerte.js")
+          expect(result["files"]).to_not have_key("hugerte-89aa452594633dfb3487381efbe9706e.js")
+          expect(result["files"]["hugerte.js"]).to eq({
+            "logical_path" => "hugerte.js",
             "mtime" => "2013-02-12T20:57:55+10:30",
             "size" => 521386,
             "digest" => nil
@@ -67,16 +67,16 @@ module HugeRTE
 
         it "yields the digested and non-digested file names" do
           expect { |block|
-            manifest.remove_digest("tinymce.js", &block)
-          }.to yield_with_args("tinymce-89aa452594633dfb3487381efbe9706e.js", "tinymce.js")
+            manifest.remove_digest("hugerte.js", &block)
+          }.to yield_with_args("hugerte-89aa452594633dfb3487381efbe9706e.js", "hugerte.js")
         end
       end
 
       describe "#each" do
         it "yields the logical path for each asset that matches the given pattern" do
           result = []
-          manifest.each(/^tinymce/) { |asset| result << asset }
-          expect(result).to eq(["tinymce.js"])
+          manifest.each(/^hugerte/) { |asset| result << asset }
+          expect(result).to eq(["hugerte.js"])
         end
       end
 
