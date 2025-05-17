@@ -1,4 +1,4 @@
-Rails Integration for TinyMCE
+Rails Integration for HugeRTE
 =============================
 
 The `hugerte-rails` gem integrates the [HugeRTE](https://hugerte.org/) editor with the Rails asset pipeline.
